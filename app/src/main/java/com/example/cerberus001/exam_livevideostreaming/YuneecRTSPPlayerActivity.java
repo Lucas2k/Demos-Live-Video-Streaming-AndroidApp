@@ -1,6 +1,5 @@
 package com.example.cerberus001.exam_livevideostreaming;
 
-import android.graphics.ImageFormat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -14,9 +13,9 @@ import com.yuneec.videostreaming.VideoPlayerException;
 
 import java.io.IOException;
 
-public class MainActivity extends AppCompatActivity  {
+public class YuneecRTSPPlayerActivity extends AppCompatActivity  {
 
-    private static final String TAG = "MainActivity";
+    private static final String TAG = "YuneecRTSPPlayerAct";
     RTSPPlayer videoPlayer;
     SurfaceView mView;
     Surface videoSurface;
@@ -25,7 +24,7 @@ public class MainActivity extends AppCompatActivity  {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_yuneec_rtsp_player);
 
         mView = (SurfaceView) findViewById(R.id.surfaceview);
 
